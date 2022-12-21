@@ -1,3 +1,9 @@
+
+![main](https://user-images.githubusercontent.com/112798358/208813774-ef4ee2d8-8075-4157-8d08-9823dc27c78c.JPG)
+
+![about](https://user-images.githubusercontent.com/112798358/208813853-0442aeb4-9707-4d04-b9d0-15e0af8cd101.JPG)
+
+
 # Personal Portfolio 
 
 - Simple and responsive design
