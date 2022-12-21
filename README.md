@@ -1,3 +1,4 @@
+My personal portfolio built with Vue, Bootstrap & Firebase.
 
 ![main](https://user-images.githubusercontent.com/112798358/208813774-ef4ee2d8-8075-4157-8d08-9823dc27c78c.JPG)
 
