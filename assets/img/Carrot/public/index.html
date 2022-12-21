@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Firebase Practice Complete Project</title>
+       
+        <link rel="stylesheet" href="style.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+
+      <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Carrot Market</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="upload.html" >Upload</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" >Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  
+
+
+  <div class="container mt-3">
+
+    <!-- CSS only 
+
+  <div class="product">
+    <div class="thumbnail" style="background-image: url('https://via.placeholder.com/350')"></div>
+    <div class="flex-grow-1 p-4">
+      <h5 class="title">Adidad Puntas</h5>
+      <p class="date">2030년 1월 8일</p>
+      <p class="price">20000원</p>
+      <p class="float-end">♡5</p>
+    </div>
+  </div>
+ <! CSS only -->
+
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+
+     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+     <script >
+  
+    const firebaseConfig = {
+    
+      apiKey: "AIzaSyDTZuAna4lKBRp2HcxiLTfeKbUiEDdPKFM",
+    
+      authDomain: "carrotproject-39745.firebaseapp.com",
+    
+      databaseURL: "https://carrotproject-39745-default-rtdb.europe-west1.firebasedatabase.app",
+    
+      projectId: "carrotproject-39745",
+    
+      storageBucket: "carrotproject-39745.appspot.com",
+    
+      messagingSenderId: "1025163097010",
+    
+      appId: "1:1025163097010:web:77a447d2f76e4c4719aaab",
+    
+      measurementId: "G-DB7R68N5HX"
+  
+    };
+
+   firebase.initializeApp(firebaseConfig);
+  
+  
+
+</script> 
+
+<script>
+
+  const db = firebase.firestore();
+  db.collection('product').get().then((result) =>{
+    
+    result.forEach((document) =>{
+
+      var dbProducts = `<div class="product">
+   <div class="thumbnail" style="background-image: url('https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg'); width=350;height=350;"></div>
+    <div class="flex-grow-1 p-4">
+      <h3 class="title">${document.data().title}</h3>
+      <h5 class="description">${document.data().description}</h5>
+      <p class="date">2022.01.03</p>
+      <p class="price">${document.data().price}₩</p>
+      <p class="float-end">♡5</p>
+    </div>
+  </div>`;
+
+      $('.container').append(dbProducts);
+      
+    })
+  })
+
+
+
+</script>
+
+
+
+
+
+    </body>
+</html>
