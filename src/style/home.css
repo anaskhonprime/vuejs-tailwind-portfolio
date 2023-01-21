@@ -11,9 +11,9 @@
     --light: #F6F5FC;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body {
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Work Sans', sans-serif;
     line-height: 1.5;
     color: #2D2B3A;
 }
@@ -1178,8 +1178,8 @@ a.text-dark:focus {
 
 .navbar-brand {
     font-weight: 600;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .navbar-nav {
@@ -1198,18 +1198,15 @@ a.text-dark:focus {
 
 .navbar-light .navbar-nav .nav-link {
     color: rgba(100, 95, 136, 0.75);
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:focus {
-    color: #645F88;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .navbar-light .navbar-nav .show>.nav-link,
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-    font-weight: 500;
+    font-weight: 600;
     color: #6C55F9;
 }
 
@@ -1347,7 +1344,7 @@ a.text-dark:focus {
 
 .img-place {
     position: relative;
-    display: block;
+    display: flex;
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -1356,9 +1353,7 @@ a.text-dark:focus {
 }
 
 .img-place img {
-    width: auto;
     max-width: 100%;
-    height: auto;
 }
 
 .bg-image {
@@ -1463,7 +1458,7 @@ a.text-dark:focus {
 
 .page-section {
     position: relative;
-    padding-top: 120px;
+    padding-top: 10px;
     padding-bottom: 80px;
     background-color: #fff;
     overflow: hidden;
@@ -1474,8 +1469,7 @@ a.text-dark:focus {
     font-size: 17px;
     font-weight: 400;
     text-align: left;
-    margin-top: 15px;
-    margin-left: 30px;
+    margin: 15px 15px 10px 5px;
 }
 
 .page-banner {
@@ -1483,9 +1477,30 @@ a.text-dark:focus {
     margin-top: 50px;
     margin-bottom: 100px;
     height: 320px;
+    background-color: #fff;
+    color: #645F88;
+    border-radius: 30px;
+}
+
+.page-banner1 {
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    height: 320px;
     background-color: #F6F5FC;
     color: #645F88;
     border-radius: 30px;
+}
+
+.page-banner2 {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    height: auto;
+    padding: 15px;
+    background-color: #fcf5fa;
+    color: #645F88;
+    border-radius: 20px;
 }
 
 .page-banner.home-banner {
@@ -1531,11 +1546,17 @@ a.text-dark:focus {
     .page-banner.home-banner {
         height: 600px;
     }
+    .page-section {
+        display: hidden;
+    }
 }
 
 @media (min-width: 992px) {
     .page-banner.home-banner {
         margin-top: 0;
+    }
+    .page-section {
+        display: hidden;
     }
 }
 
@@ -1603,7 +1624,7 @@ a.text-dark:focus {
     width: 32px;
     height: 3px;
     border-radius: 40px;
-    background-color: #6C55F9;
+    background-color: #55f978;
 }
 
 .btn-split {
@@ -1680,6 +1701,11 @@ a.text-dark:focus {
 
 .counter-section .row>*:first-child {
     border-radius: 6px 0 0 6px;
+}
+
+.techs img {
+    margin-right: 10px;
+    opacity: 90%;
 }
 
 .counter-section .row>*:last-child {
@@ -1785,9 +1811,9 @@ a.text-dark:focus {
     position: relative;
     display: block;
     margin: 0 auto;
-    padding: 32px 20px 70px 20px;
-    max-width: 260px;
-    min-height: 270px;
+    padding: 20px 20px 50px 20px;
+    max-width: 400px;
+    min-height: 250px;
     border-radius: 6px;
     box-shadow: 0 2px 6px rgba(100, 95, 136, 0.16);
 }
@@ -1819,17 +1845,21 @@ a.text-dark:focus {
 
 .card-blog .post-author {
     font-weight: 500;
+    margin-left: 11px;
     color: #645F88;
 }
 
 .card-blog .post-date {
-    font-size: 13px;
+    font-size: 15px;
     color: #B4B2C5;
 }
 
 .card-blog .post-title {
     margin-bottom: 10px;
-    font-size: 20px;
+    margin-top: 20px;
+    font-size: 22px;
+    margin-left: 10px;
+    font-weight: bold;
 }
 
 .card-blog .post-title a {
@@ -1840,6 +1870,9 @@ a.text-dark:focus {
 .card-blog .post-excerpt {
     font-size: 14px;
     color: #898798;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-right: 20px;
 }
 
 .card-blog .footer {
@@ -2075,6 +2108,12 @@ a.text-dark:focus {
     color: #212529;
 }
 
+.img-container {
+    display: block;
+    max-width: 450px;
+    max-height: 300px;
+}
+
 .blog-single-wrap .post-meta {
     display: block;
     margin-bottom: 24px;
@@ -2100,6 +2139,8 @@ a.text-dark:focus {
 .blog-single-wrap .post-meta .post-date a,
 .blog-single-wrap .post-meta .post-comment-count a {
     color: #645F88;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .blog-single-wrap .post-content .quote {
@@ -2125,6 +2166,11 @@ a.text-dark:focus {
     border-radius: 6px;
     border: 1px solid #EDECF5;
     box-shadow: 0 3px 9px rgba(100, 95, 136, 0.15);
+}
+
+.categories img {
+    margin-right: 12px;
+    margin-bottom: 10px;
 }
 
 .widget-title {

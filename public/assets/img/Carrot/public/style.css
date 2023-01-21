@@ -1,0 +1,31 @@
+.product {
+    display: flex;
+    padding: 10px;
+}
+
+.thumbnail {
+    max-width: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.product .price {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product .title {
+    font-weight: 600;
+}
+
+.product .date {
+    color: grey;
+    font-size: 13px;
+}
+
+.product .description {
+    font-size: 12px;
+    font-weight: 600;
+}

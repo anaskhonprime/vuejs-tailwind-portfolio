@@ -42,8 +42,7 @@
               <textarea
                 rows="6"
                 class="form-control"
-                placeholder="Enter message"
-              ></textarea>
+                placeholder="Enter message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary rounded-pill mt-4">
               Send Message
@@ -57,7 +56,17 @@
 </template>
 
 <script>
-export default {}
+import Navbar from "./Navbar.vue";
+import Footer from "./Footer.vue";
+
+export default {
+  name: "Contact",
+
+  components: {
+    Navbar: Navbar,
+    Footer: Footer,
+  },
+};
 </script>
 
 <style></style>

@@ -1,14 +1,9 @@
-<template>
-    
-</template>
+<template></template>
 
 <script>
 export default {
-    name : 'All Blogs',
-
-}
+  name: "All Blogs",
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
