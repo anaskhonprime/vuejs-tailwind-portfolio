@@ -1,26 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <transition name="fade" mode="out-in" @before-enter="beforeEnter" appear>
+    <router-view :blog="blog"></router-view>
+  </transition>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Blog from './data/data.js'
+import ProjectData from './data/projects.js'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  data () {
+    return {
+      blog: Blog,
+      project: ProjectData
+    }
+  },
+
+  methods: {
+    beforeEnter () {
+      this.$root.$emit('scrollBeforeEnter')
+    }
+  },
+
+  components: {}
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 350ms;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-leave,
+.fade-enter-to {
+  opacity: 1;
 }
 </style>

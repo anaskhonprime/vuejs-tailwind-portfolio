@@ -1,0 +1,144 @@
+export default [{
+        name: "Personal Portfolio",
+        id: 1,
+        content: "Personal Portfolio Built with Vue, Bootstrap & Firebase",
+        image: "https://res.cloudinary.com/practicaldev/image/fetch/s--jswgkbze--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ogxz02ff3gmawyazyx3y.png",
+        tech1: "https://img.shields.io/badge/VueJS-439A97?style=flat&logo=Vue.js&logoColor=white",
+        tech2: "https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=Firebase&logoColor=white",
+        tech3: "https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white",
+
+        content1: `Vue를 공부하고 활용해 포트폴리오를 제작해봤습니다`,
+        content2: `Vue.js는 화면단 라이브러리이자 프레임워크라 볼 수 있다. 뷰 코어 라이브러리는 화면단 데이터 표현에 관한 기능들을 중점으로 지원하지만, 프레임워크 기능인 라우터, 상태 관리, 테스팅 등을 쉽게 결합할 수 있는 형태로 제공된다. 그래서 공식 문서에서는 뷰를 점진적인 프레임워크(progressive framework)라고 부릅니다.
+       
+      Vuejs 장점은 러닝커브가 낮거 React와 Angular에 비해 성능이 우수하고, 빠릅니다.
+      컴포넌트 기반 프레임워크이고 Angular의 데이터 바인딩 특성 & React의 virtual DOM 기반 렌더링 특징을 가지고 있습니다. 
+        `,
+        content3: `홈페이지는 Home, About, Blogs, Projects와 Contact 페이지로 구성되어 있고 컴퍼는트, 라우터, 데이터 렌데링 문법으로 구성되어 있습니다.`,
+    },
+
+    {
+        name: "Vue Instagram",
+        id: 2,
+        content: "Simple Web Application built with VueJs",
+        image: "https://res.cloudinary.com/practicaldev/image/fetch/s--RtwxcNhF--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/http://timrijkse.nl/images/vue-full-guide.png",
+        tech1: "https://img.shields.io/badge/VueJS-439A97?style=flat&logo=Vue.js&logoColor=white",
+        tech2: "https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white",
+        tech3: "https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white",
+
+        content3: `VueJs 기반으로 실습용 인스타그램 웹 서비스를 만들어봤습니다. Vue CLI를 이용한 프로젝트 만들기부터 컴파일, 그리고 PWA 발행 방법까지 실제 프로덕션에 쓰이는 Vue의 대부분의 기술을 배워봤습니다.
+   VueJS는 문법이 쉽고 코딩패턴이 정해져있어서 초보도 쉽고 협업도 쉽고 가볍고 빠릅니다  
+
+  리액트는 자바스크립트 잘해야 모든게 가능한데 Vue는 자바스크립트가 어설퍼도 Vue 문법 10개 정도만 새로 외워주시면 쪼렙 개발자도 누구나 멋진 웹앱을 쉽게 만들 수 있습니다. `,
+
+        content2: `Bootstrap vue를 이용한 UI 개발과 반응형 레이아웃 구성하고,  vbind, vfor, v if 문법 배우면서,  HTML 컴포넌트화 하기,Props 사용하기
+
+ Vuerouter 설치와 라우터 개념,
+ 라이프사이클 함수 사용하는 법 ,
+ methods, computed 에 기능개발하기,
+ 라우터를 이용한 페이지 나누기,
+ URL파라미터를 추가한 라우터 만들기,
+ named routes, navigation guard ,
+ Github Pages를 이용한 간단한 발행 등 다양한 VueJs 개발 환경을 실습해봤습니다.  `,
+        content1: `Vue.js는 화면단 라이브러리이자 프레임워크라 볼 수 있다. 뷰 코어 라이브러리는 화면단 데이터 표현에 관한 기능들을 중점으로 지원하지만, 프레임워크 기능인 라우터, 상태 관리, 테스팅 등을 쉽게 결합할 수 있는 형태로 제공된다. 그래서 공식 문서에서는 뷰를 점진적인 프레임워크(progressive framework)라고 부릅니다.
+       
+      Vuejs 장점은 러닝커브가 낮거 React와 Angular에 비해 성능이 우수하고, 빠릅니다.
+      컴포넌트 기반 프레임워크이고 Angular의 데이터 바인딩 특성 & React의 virtual DOM 기반 렌더링 특징을 가지고 있습니다. 
+        `,
+    },
+
+    {
+        name: "Ethereum Dapp",
+        id: 3,
+        content: "이더리움 기반 NFT 민팅 홈페이지 개발",
+        image: "https://i0.wp.com/nftnewstoday.com/wp-content/uploads/2022/11/nft-creator-royalties.jpg?fit=1200%2C675&ssl=1",
+        tech1: "https://img.shields.io/badge/Solidity-363636?style=flat&logo=Solidity&logoColor=white",
+        tech2: "https://img.shields.io/badge/Remix-000000?style=flat&logo=Remix&logoColor=white",
+        tech3: "https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white",
+
+        content1: `
+        스마트 컨트랙트,
+        왜 필요한가요 ? 그렇다면 도대체 스마트 컨트랙트가 왜 필요한 것인지에 대해 알아보기 전에,
+        우선 스마트 컨트랙트의 특장점에 대해 정리해보도록 하겠습니다.기술적인 관점에서 스마트 컨트랙트는 아래와 같은 대표적인 특징을 가지고 있습니다 .1) 누구나 컨트랙트를 배포할 수 있습니다 .2) 컨트랙트의 소유자가 아니더라도 누구든지 검증할 수 있습니다 .3) 코드의 실행을 자동화할 수 있습니다 .4) 위변조가 어렵습니다.
+`,
+        content2: `
+민팅 비용 민팅은 블록체인 자산을 생성하는 과정을 위한 작업으로 서로 다른 암호화폐가 상대편 체인에 생성되고 교환되는 것을 의미하며, 마인팅 이라고도 하며, 코인을 주조하는 행위를 뜻합니다.NFT에도 결국은 블록체인, 암호화폐의 연장선이므로 해당 용어가 쓰이는데, 한 마디로 말해 NFT 자산을 '구매'
+한다 또는 '소유'
+한다는 개념 정도로 이해하면 되겠습니다.이어서 민팅 비용까지 비교해보겠습니다.
+`,
+        content3: `
+이더리움 기반 NFt 민팅 프로젝트는 간단한 프로젝트 소개, 민팅가이드, 참고 이미지 예시 예시로 구성되어 있으며
+민팅 페이지 경우에는 민팅 시작 시간, 계정당 민팅 제한, 민팅된 상품 수량 표시 등 민팅 관련 정보들 포함되어 있습니다.
+민팅을 진행하기 위한 이더리움 메인넷 지갑 연결하야 하면 지갑 연결시 보유 상품이나 민팅 가능한 수량을 알 수 있습니다.
+민팅 방식은 생각보다 간단해서 지갑 연결, 민팅 수량 정하고 민팅 버튼을 눌러 메타마스크 지갑 사인 받으면서 진행됩니다.
+`,
+    },
+    {
+        name: "ERC721 Smart Contact",
+        id: 4,
+        content: "이더리움 기반 신규 스마트 컨트랙트 개발",
+        image: "https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/957329/ethereum-name-service-dapp-tutorial-08de2d66b422d12b766420857f0428b6.png",
+        tech3: "https://img.shields.io/badge/Solidity-363636?style=flat&logo=Solidity&logoColor=white",
+        tech2: "https://img.shields.io/badge/Remix-000000?style=flat&logo=Remix&logoColor=white",
+        tech1: "https://img.shields.io/badge/Ethereum-3C3C3D?style=flat&logo=Ethereum&logoColor=white",
+
+        content1: `
+1 이더리움은 비트코인을 참조하여 설계된 블록체인 기반 플랫폼이기
+때문에 기본적인 매커니즘은 비트코인과 많이 비슷합니다.하지만
+이더리움을 2 세대 블록체인으로 거듭나게 한 차이점들이 존재합니다.
+가장 큰 차이점은 스마트 컨트랙트 기능의
+유무입니다.NFT는 구축된 표준에 따라 다양한 형태로 나타날 수
+있습니다.이더리움 네트워크 상에서 NFT를 구현하는 기술 중
+대표적인 것이 ERC721 이라는 이더리움 표준안입니다.대표적으로
+이더리움 블록체인에서 ERC721 스마트 컨트랙트를 사용하지만 발행
+비용이 다른 체인보다 수수료 많이 나가는 편입니다 `,
+
+        content2: `
+ERC721 이란 ? -ERC(Ethereum Request
+    for Comment) 는 이더리움
+블록체인 네트워크에서 발행되는 토큰(Token, 메인 블록체인 내의 기본적인 규약을 지키면서 종속되어 돌아가는 디지털자산을 지칭) 의
+표준을 뜻합니다.ERC721은‘ 대체불가능한’ 특징을 지니고 있는
+이더리움상의 NFT의 표준안입니다.ERC721은 특정 생태계에서 거래
+등에 사용되는 토큰이 아니며, 게임 등 특정 목적으로 주로
+쓰입니다.
+`,
+
+        content3: `
+대표적으로 이더리움 체인에서 NFT 발행하고 싶을 때 스마트 컨트랙트 발행이나 민팅 수수료가 생각보가 비싸게 나옵니다 측, 이더리움 기반 10 개 NFT를 민팅하는데 5 $ 가까이 수수료 나오는데 1000 개, 1 만개 NFT를 발행한다면 민팅만 하는데 몇백만원 비용이 발생합니다.이번에 소개해드릴 서비스는 신규 스마트 컨트랙트는 컬랙션 총 민팅 수량의 많을 경우 이 스마트 컨트랙트를 사용하면 블록높의에 따로 일반 컨트랙트보다 아주저렴하게 발행 가능합니다.다음에 일반 ERC721 컨트랙트와 신규 스마트 컨트랙트 발행 비용을 비교해보겠습니다.
+`,
+    },
+
+    {
+        name: "ERC721 Smart Contact",
+        id: 4,
+        content: "이더리움 기반 신규 스마트 컨트랙트 개발",
+        image: "https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/957329/ethereum-name-service-dapp-tutorial-08de2d66b422d12b766420857f0428b6.png",
+        tech3: "https://img.shields.io/badge/Solidity-363636?style=flat&logo=Solidity&logoColor=white",
+        tech2: "https://img.shields.io/badge/Remix-000000?style=flat&logo=Remix&logoColor=white",
+        tech1: "https://img.shields.io/badge/Ethereum-3C3C3D?style=flat&logo=Ethereum&logoColor=white",
+
+        content1: `
+1 이더리움은 비트코인을 참조하여 설계된 블록체인 기반 플랫폼이기
+때문에 기본적인 매커니즘은 비트코인과 많이 비슷합니다.하지만
+이더리움을 2 세대 블록체인으로 거듭나게 한 차이점들이 존재합니다.
+가장 큰 차이점은 스마트 컨트랙트 기능의
+유무입니다.NFT는 구축된 표준에 따라 다양한 형태로 나타날 수
+있습니다.이더리움 네트워크 상에서 NFT를 구현하는 기술 중
+대표적인 것이 ERC721 이라는 이더리움 표준안입니다.대표적으로
+이더리움 블록체인에서 ERC721 스마트 컨트랙트를 사용하지만 발행
+비용이 다른 체인보다 수수료 많이 나가는 편입니다 `,
+
+        content2: `
+ERC721 이란 ? -ERC(Ethereum Request
+    for Comment) 는 이더리움
+블록체인 네트워크에서 발행되는 토큰(Token, 메인 블록체인 내의 기본적인 규약을 지키면서 종속되어 돌아가는 디지털자산을 지칭) 의
+표준을 뜻합니다.ERC721은‘ 대체불가능한’ 특징을 지니고 있는
+이더리움상의 NFT의 표준안입니다.ERC721은 특정 생태계에서 거래
+등에 사용되는 토큰이 아니며, 게임 등 특정 목적으로 주로
+쓰입니다.
+`,
+
+        content3: `
+대표적으로 이더리움 체인에서 NFT 발행하고 싶을 때 스마트 컨트랙트 발행이나 민팅 수수료가 생각보가 비싸게 나옵니다 측, 이더리움 기반 10 개 NFT를 민팅하는데 5 $ 가까이 수수료 나오는데 1000 개, 1 만개 NFT를 발행한다면 민팅만 하는데 몇백만원 비용이 발생합니다.이번에 소개해드릴 서비스는 신규 스마트 컨트랙트는 컬랙션 총 민팅 수량의 많을 경우 이 스마트 컨트랙트를 사용하면 블록높의에 따로 일반 컨트랙트보다 아주저렴하게 발행 가능합니다.다음에 일반 ERC721 컨트랙트와 신규 스마트 컨트랙트 발행 비용을 비교해보겠습니다.
+`,
+    },
+];
